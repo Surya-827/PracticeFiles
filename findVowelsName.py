@@ -8,7 +8,7 @@ class Solution(object):
     @classmethod
     def findConsonantsGivenName(cls,name:str) -> list:
         cons_list = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
-        return list(set([ char for char in list(name) if char in cons_list]))
+        return list(set([ char for char in list(name) if char in cons_list])).sort()
     
 
 if __name__=="__main__":
