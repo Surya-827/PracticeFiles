@@ -10,6 +10,10 @@ class Solution(object):
         cons_list = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
         return sorted(list(set([ char for char in list(name) if char in cons_list])))
     
+    @classmethod
+    def findAsciiSumOfGivenName(cls,name:str) -> int:
+        ascii_sum=sum([ord(i) for i in list(name)])
+        return ascii_sum
 
 if __name__=="__main__":
     obj = Solution()
