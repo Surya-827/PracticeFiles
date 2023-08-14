@@ -3,7 +3,7 @@ class Solution(object):
     @classmethod
     def findVowelsInGivenName(cls,name : str) -> list:
         vowel_list = ['a', 'e','i' ,'o']
-        return list(set([ char for char in list(name) if char in vowel_list]))
+        return sorted(list(set([ char for char in list(name) if char in vowel_list])))
     
     @classmethod
     def findConsonantsGivenName(cls,name:str) -> list:
