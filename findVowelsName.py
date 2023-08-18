@@ -14,6 +14,11 @@ class Solution(object):
     def findAsciiSumOfGivenName(cls,name:str) -> int:
         ascii_sum=sum([ord(i) for i in list(name)])
         return ascii_sum
+    
+    @classmethod 
+    def findAsciiSumOfOddValues(cls,name:str) -> int:
+        ascii_sum = sum([ord(i) for i in list(name) if ord(i)%2==1])
+        return ascii_sum
 
 if __name__=="__main__":
     obj = Solution()
