@@ -4,6 +4,7 @@ class Solution(object):
     for i in range(1,n+1):
         print(f"{x} x {i} = {x*i}")
 
+
  @classmethod
  def findEvensInTable(cls,x:int,n:int):
    evens,odds=[],[]
@@ -14,9 +15,11 @@ class Solution(object):
    return evens
 
 
+
 if __name__=="__main__":
   obj = Solution()
   table = int(input("Enter the Table : ")
   n = int(input("Enter multiple limit : "))
   obj.tablePrinter(table,n)
   print(obj.findEvensInTable(table,n))
+
